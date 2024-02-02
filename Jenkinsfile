@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...${BUILD_NUMBER}'
-                scripts{
+                script{
                     sh"echo ${BUILD_NUMBER}"
                 }
             }
