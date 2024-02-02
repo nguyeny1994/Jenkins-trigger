@@ -16,9 +16,6 @@ pipeline {
             steps {
                 echo 'Deploying..'
             }
-            steps {
-                echo 'Deploydasdasding..'
-            }
         }
     }
 }
