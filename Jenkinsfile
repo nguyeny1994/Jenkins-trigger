@@ -14,7 +14,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying.......'
+                echo 'Deploying..test......${BUILD_NUMBER}'
+                script{
+                    sh"echo ${BUILD_NUMBER}"
+                }
             }
         }
     }
